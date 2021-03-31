@@ -1,45 +1,103 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/susanmarie87/MS2-Game)
 
-Welcome USER_NAME,
+Sit, relax, and Align The Chakras in this simple memory game. This game is desgined to be challenging yet relaxing 
+all in one. This game is desgined to fit all screens so enjoy on your desktop, tablet, or mobile phone. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Image
 
-## Gitpod Reminders
+Live site hosted on Github pages HERE
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+UX
+As a user, I want to play a rousing matching game.
 
-`python3 -m http.server`
+As a user I want the game to be able to keep my attention.
 
-A blue button should appear to click: *Make Public*,
+As a user I want the game to be a good challenge
 
-Another blue button should appear to click: *Open Browser*.
+As a user choosing a card matching game, I want the memory game to sharpen my mind.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As a user, I want this game to function properly.
 
-A blue button should appear to click: *Make Public*,
+As a user, I want this game to be mobile first responsive.
 
-Another blue button should appear to click: *Open Browser*.
+Wireframes
+Basic Wireframes
+![Image]('assets/MS2-WireFrame/images.jpg')
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Final Wireframes
 
-## Updates Since The Instructional Video
+Existing Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Technologies Used
+HTML5
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+CSS
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Bootstrap
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Github
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Git
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+JavaScript
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+W3C validation
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Testing
+Each page on the website was tested for screen resposiveness to ensure breakpoints.
 
---------
+The code was ran through each specific validator to make sure it passed.
 
-Happy coding!
+Tested all social media links
+
+Ran HTML code through WS3 Markdown validator. Minor warnings appeared regarding button element not permitted in the "a" element. Resolved this by replacing button element with div element
+
+Removed unnecessary code that was flagged in HTML validator.
+
+Ran CSS through WS3 validator- PASSED.
+
+Ran JavaScript through JSHint. First pass returned 15 errors.
+
+Tested game on each mobile device. 
+
+#Bugs & errors
+Originally I could not stop the hover effect over the cards. This extremely painful and month long issue was resolved with the help
+of my mentor Gerard McBride by adding an Onclick event to each card and putting the hover effect into a  JavaScript function. 
+
+
+Deployment
+Align The Chakras has been deployed on GitHub Pages with the following process:
+
+All code was written on Gitpod, a cloud-based IDE.
+
+The code was then pushed to GitHub where it is stored in my Repository.
+
+Under the Settings section of the GitHub repository, scroll down to GitHub Pages section.
+
+Under 'Source' drop-down, the 'Master branch' was selected.
+
+Once selected, this publishes the project to GitHub Pages and displays the site URL.
+
+There is no difference between the deployed version and the development version.
+
+The code can be run locally through clone or download. You can do this by opening the repository, clicking on the green 'Code' button and selecting either 'clone or download'.
+
+The Clone option provides a URL, which you can use on your desktop IDE.
+
+The Download ZIP option provides a link to download a ZIP file which can be unzipped on your local machine or uploaded to your cloud-based IDE workspace.
+
+Credits:
+
+Card Image:
+https://unsplash.com/@maxineficheux
+https://images.unsplash.com/photo-1566745914757-00febc880ff9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjZ8fGxhdmVuZGVyJTIwZmxvd2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
+
+<a href='https://www.freepik.com/photos/flower'>Flower photo created by tawatchai07 - www.freepik.com</a>
+Acknowledgements
+Code Institute
+
+https://www.shutterstock.com/ja/blog/wp-content/uploads/sites/6/2017/02/shutterstock_438865177.jpg
+
+https://stackoverflow.com/questions/57452099/how-do-i-add-grid-in-multiple-flip-cards-in-html
+
+https://yogapractice.com/yoga/balancing-7-chakras/
