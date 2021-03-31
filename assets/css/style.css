@@ -49,4 +49,19 @@ h1 {
     left:0px;
     overflow: hidden;
     backface-visibility: hidden;
+    transition: transforms 250ms ease-in-out;
+}
+.card-front-image {
+    width: 120px;
+    height: 120px;
+}
+.card-back img {
+    width: 120px;
+    height: 140px;
+}
+.card-flip .card-back {
+    transform: rotateY(-180deg);
+}
+.card-flip .card-front {
+    transform: rotateY(0);
 }
