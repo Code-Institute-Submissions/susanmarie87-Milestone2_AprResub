@@ -13,7 +13,17 @@ const cards =[
 ];
 
 function shuffle(array) {
+  var currentIndex =array.length, temporaryValue, randomIndex;
+  while (0 !== currentIndex) {
+      //remaining element
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
 
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+  }
+  return array;
 }
 
 function gameWon() {
