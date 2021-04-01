@@ -20,7 +20,7 @@ body {
 }
 h1 {
     font-family: 'BioRhyme Expanded', serif;
-    font-size: 5em;
+    font-size: 3em;
     margin: 0;
     padding: 0;
     padding-top: 25px;
@@ -62,4 +62,30 @@ h1 {
 .card-back img {
     width: 120px;
     height: 140px;
+}
+.card.flip .card-back {
+    transform: rotateY(-180deg);
+}
+.card.flip .card-front {
+    transform: rotateY(0);
+}
+.back-image {
+    align-self: flex-start;
+    transform: translateY(-10px);
+    transition: transform 100ms ease-in-out;
+}
+.card-back {
+    background-color: black;
+    border-color: #FF6D00;
+}
+.card-front {
+    background-color: black;
+    border-color:(180deg);
+}
+.card-value {
+    transition: transform 100ms ease-in-out;
+    transform: scale(.9);
+}
+.card-back:hover {
+    transform: scale(1.05);
 }
