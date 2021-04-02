@@ -78,7 +78,7 @@ function generateCardGrid() {
    backImg.src = 'assets/images/flamethrower.jpg';
    backImg.classList.add('back-image');
 
-   const gameGrid = dpcument.getElementById('game-container');
+   const gameGrid = document.getElementById('game-container');
 
    front.appendChild(frontImg);
    back.appendChild(backImg);
