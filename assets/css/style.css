@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@800&display=swap');
-
 html {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 *,
 *::before,
@@ -20,90 +19,100 @@ body {
 }
 h1 {
     font-family: 'BioRhyme Expanded', serif;
-    font-size: 3em;
-    margin: 0;
-    padding: 0;
-    padding-top: 25px;
-    text-align: center;
-    color: aqua
+   font-size: 3em;
+   margin: 0;
+   padding: 0;
+   padding-top: 25px;
+   text-align: center;
+   color: aqua;
 }
 .game-container {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap:10px;
-    margin: 50px;
-    justify-content: center;
-    perspective: 500px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px;
 }
+
 .card {
-    cursor: pointer;
-    position: relative;
-    height: 120px;
-    width: 120px;
-    background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  height: 120px;
+  width: 120px;
+  background-color: transparent;
 }
+
 .card-face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    backface-visibility: hidden;
-    border-radius: 12px;
-    /*border-width:1px;*/
-    /*border-style: solid;*/
-    transition: transform 250ms ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  /* border-width: 1px; */
+  /* border-style: solid; */
+  transition: transform 250ms ease-in-out;
 }
 .card-front img {
-    width: 120px;
-    height: 120px;
+  width: 120px;
+  height: 120px;
 }
 .card-back img {
-    width: 120px;
-    height: 140px;
+  width: 120px;
+  height: 140px;
 }
+
 .card.flip .card-back {
-    transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
+
 .card.flip .card-front {
-    transform: rotateY(0);
+  transform: rotateY(0)
 }
+
 .back-image {
-    align-self: flex-start;
-    transform: translateY(-10px);
-    transition: transform 100ms ease-in-out;
+  align-self: flex-start;
+  transform: translateY(-10px);
+  transition: transform 100ms ease-in-out;
 }
+
 .card-back {
-    background-color: black;
-    border-color: #FF6D00;
+  background-color: black;
+  border-color: #FF6D00;
 }
+
 .card-front {
-    background-color: black;
-    border-color:(180deg);
+  background-color: black;
+  transform: rotateY(180deg);
 }
+
 .card-value {
-    transition: transform 100ms ease-in-out;
-    transform: scale(.9);
+  transition: transform 100ms ease-in-out;
+  transform: scale(.9);
 }
+
 .card-back:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
+
 #victory-screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top:50px;
-    display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  display: none;
 }
 #victory-screen button {
-    width: 175px;
-    padding: 8px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    background-color: purple;
-    color: white;
-    margin-top: 50px;
+  width: 175px;
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: purple;
+  color: white;
+  margin-top: 50px;
 }

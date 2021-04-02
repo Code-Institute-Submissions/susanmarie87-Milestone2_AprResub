@@ -1,148 +1,176 @@
 //card array
-const cards =[
-    'sacral',
-    'thirdEye',
-    'chakraMan',
-    'ladyChakra',
-    'chakraTapestry',
-    'chakraAngel',
-    'heart',
-    'solarPlexus',
-    'throat',
-    'root',
+const cards = [
+  'sacral',
+  'thirdEye',
+  'chakraMan',
+  'ladyChakra',
+  'chakraTapestry',
+  'chakraAngel',
+  'heart',
+  'solarPlexus',
+  'throat',
+  'root'
 ];
 
-let currentCard= null;
+let currentCard = null;
 
 
-let cardsMatched= []; 
+let cardsMatched = [];
+
 
 function shuffle(array) {
-  var currentIndex =array.length, temporaryValue, randomIndex;
-  while (0 !== currentIndex) {
-      //remaining element
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
+  var currentIndex = array.length, temporaryValue, randomIndex;
 
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
+  while (0 !== currentIndex) {
+
+   
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+   
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
   }
+
   return array;
 }
 
-//function called when game is won
 function gameWon() {
-//Hides game section
-document.getElementById('main').style.display = 'none';
+ 
+  document.getElementById('main').style.display = 'none';
 
-//shows vicotry screen
-document.getElementById('victory-screen').style.display ='flex';
+  
+  document.getElementById('victory-screen').style.display = 'flex';
 
-//sets event listener for play again button
-document.getElementById('play-again-button').addEventListener('click', resetGame);
+  document.getElementById('play-again-button').addEventListener('click', resetGame);
 };
 
-function cardClicked(clickEvent) {
-//reference for element clicked on
-    const cardElementClicked = clickEvent.currentTarget;
+function cardClicked (clickEvent) {
+ 
+  const cardElementClicked = clickEvent.currentTarget;
 
-    const cardClicked = cardElementClicked.dataset.cardType;
+ 
+  const cardClicked = cardElementClicked.dataset.cardtype;
 
-    //Adding flip class to clicked card
-    cardElementClicked.classList.add('flip');
 
-    //Is there a match?
-    if (currentcard) {
 
-        const(matchFound) = cardClicked ===currentcard;
+  cardElementClicked.classList.add('flip');
 
-     if (matchFound) {
-        cardsMatched.push(cardClicked);
+  
+  if (currentCard) {
+    
+    const matchFound = cardClicked === currentCard;
 
-    //if cards matched is equal to card length, the game is over
+   
+    if (matchFound) {
+      cardsMatched.push(cardClicked);
 
-    if (cardsMatched.length === cards.length) {
-         //set Timeout
+      
+      if (cardsMatched.length === cards.length) {
+       
         setTimeout(gameWon, 500);
-
-        //reset
-
-        currentCard = null;
-      } else {
-          setTimeout(() => {
-            
-         document
-         .querySelectorAll(`[data-cardType="${currentCard}"]`)
-         .forEach(card => card.classList.remove('flip'));   
-
-         //remove flip class from clicked card
-
-         cardElementClicked.classList.remove('flip');
-         
-         //reset
-         currentCard = null;
-          }, 500);
       }
-      //reset
-     } else {
-         currentCard = cardClicked;
-   }
-            
+
+      // Reset.
+      currentCard = null;
+    } else {
+      
+      setTimeout(() => {
+       
+        document
+          .querySelectorAll(`[data-cardType="${currentCard}"]`)
+          .forEach(card => card.classList.remove('flip'));
+
+        
+        cardElementClicked.classList.remove('flip');
+
+        // Reset.
+        currentCard = null;
+      }, 500);
+    }
+
+    
+    
+  } else {
+    currentCard = cardClicked;
   }
- }
+};
+
 
 function resetGame() {
 
+  document
+    .querySelectorAll('.card')
+    .forEach(card => card.classList.remove('flip'));
+
+  // Show the game section.
+  document.getElementById('main').style.display = 'block';
+
+  // Hide the victory screen section.
+  document.getElementById('victory-screen').style.display = 'none';
 }
 
-//rendering card grid
+
 function generateCardGrid() {
-    //spreading cards
-   const completeCards = shuffle([...cards, ...cards]);
+  
+  const completeCards = shuffle([...cards, ...cards]);
+
+  
+  completeCards.forEach(c => {
+
+    
+    const container = document.createElement('div');
+
    
-   completeCards.foreach(c => {
-//cards container
-   const container= document.createElement('div');
-   const back=document.createElement('div');
+    const front = document.createElement('div');
+    const back = document.createElement('div');
 
-   //images container
-   const frontImg = document.createElement('img');
-   const backImg= document.createElement('img');
+
+    const frontImg = document.createElement('img');
+    const backImg = document.createElement('img');
+
+
+
+    container.classList.add('card');
+
+ 
+    container.dataset.cardtype = c;
+
    
-   //setting attributes for elements
-   container.classList.add('card');
-   container.dataset.cardtype = c;
+    front.classList.add('card-face');
+    front.classList.add('card-front');
+    back.classList.add('card-face');
+    back.classList.add('card-back');
 
-   //Front and back class names
-   front.classList.add('card-face');
-   front.classList.add('card-front');
-   back.classList.add('card-face');
-   back.classList.add('card-back');
 
-   //setting img source
-   frontImg.src = `/assets/images/${c}.jpg`;
-   frontImg.classList.add('card-value');
+    frontImg.src = `/assets/images/${c}.jpg`;
+    frontImg.classList.add('card-value');
 
-   //back img source
-   backImg.src = 'assets/images/flamethrower.jpg';
-   backImg.classList.add('back-image');
+    // The backs of all of the cards are the same.
+    backImg.src = '/assets/images/Flamethrower.jpg';
+    backImg.classList.add('back-image');
 
-   const gameGrid = document.getElementById('game-container');
+  
+    const gameGrid = document.getElementById('game-container');
 
-   front.appendChild(frontImg);
-   back.appendChild(backImg);
-   container.appendChild(back);
-   container.appendChild(front);
-   gameGrid.appendChild(container);
-});
+    front.appendChild(frontImg);
+    back.appendChild(backImg);
+    container.appendChild(back);
+    container.appendChild(front);
+    gameGrid.appendChild(container);
+  });
 };
 
-function init() {
 
-     generateCardGrid();
+function init () {
+  
+  generateCardGrid();
 
-     document.querySelectorAll('.card')
-     .forEach(card => card.addEventListener('click', cardClicked));
+  document
+    .querySelectorAll('.card')
+    .forEach(card => card.addEventListener('click', cardClicked));
 };
+
+// Initialize the game.
 init();
