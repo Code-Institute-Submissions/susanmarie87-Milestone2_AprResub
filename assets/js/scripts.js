@@ -26,9 +26,17 @@ function shuffle(array) {
   return array;
 }
 
+//function called when game is won
 function gameWon() {
+//Hides game section
+document.getElementById('main').style.display = 'none';
 
-}
+//shows vicotry screen
+document.getElementById('victory-screen').style.display ='flex';
+
+//sets event listener for play again button
+document.getElementById('play-again-button').addEventListener('click', resetGame);
+};
 
 function cardClicked(clickedEvent) {
 
