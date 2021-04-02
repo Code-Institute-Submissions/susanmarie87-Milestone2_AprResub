@@ -12,6 +12,11 @@ const cards =[
     'root',
 ];
 
+let currentCard= null;
+
+
+let cardsMatched= []; 
+
 function shuffle(array) {
   var currentIndex =array.length, temporaryValue, randomIndex;
   while (0 !== currentIndex) {
@@ -38,9 +43,54 @@ document.getElementById('victory-screen').style.display ='flex';
 document.getElementById('play-again-button').addEventListener('click', resetGame);
 };
 
-function cardClicked(clickedEvent) {
+function cardClicked(clickEvent) {
+//reference for element clicked on
+    const cardElementClicked = clickEvent.currentTarget;
 
-}
+    const cardClicked = cardElementClicked.dataset.cardType;
+
+    //Adding flip class to clicked card
+    cardElementClicked.classList.add('flip');
+
+    //Is there a match?
+    if (currentcard) {
+
+        const(matchFound) = cardClicked ===currentcard;
+
+     if (matchFound) {
+        cardsMatched.push(cardClicked);
+
+    //if cards matched is equal to card length, the game is over
+
+    if (cardsMatched.length === cards.length) {
+         //set Timeout
+        setTimeout(gameWon, 500);
+
+        //reset
+
+        currentCard = null;
+      } else {
+          setTimeout(() => {
+            
+         document
+         .querySelectorAll(`[data-cardType="${currentCard}"]`)
+         .forEach(card => card.classList.remove('flip'));   
+
+         //remove flip class from clicked card
+
+         cardElementClicked.classList.remove('flip');
+         
+         //reset
+         currentCard = null;
+          }, 500);
+      }
+      //reset
+     } else {
+         currentCard = cardClicked;
+   }
+            
+  }
+ }
 
 function resetGame() {
 
