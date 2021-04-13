@@ -18,7 +18,7 @@ body {
     background-color: darkorchid;
 }
 h1 {
-    font-family: 'BioRhyme Expanded', serif;
+   font-family: 'BioRhyme Expanded', serif;
    font-size: 3em;
    margin: 0;
    padding: 0;
@@ -31,10 +31,20 @@ h1 {
   grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   margin: 50px;
+  padding-top: 50px;
   justify-content: center;
   perspective: 500px;
 }
-
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
 .card {
   cursor: pointer;
   position: relative;

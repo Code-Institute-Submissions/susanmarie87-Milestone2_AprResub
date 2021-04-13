@@ -48,7 +48,6 @@ Each page on the website was tested for screen resposiveness to ensure breakpoin
 
 The code was ran through each specific validator to make sure it passed.
 
-Tested all social media links
 
 Ran HTML code through WS3 Markdown validator. Minor warnings appeared regarding button element not permitted in the "a" element. Resolved this by replacing button element with div element
 
@@ -63,9 +62,13 @@ Tested game on each mobile device.
 #Bugs & errors
 Originally I could not stop the hover effect over the cards. This extremely painful and month long issue was resolved with the help
 of my mentor Gerard McBride by adding an Onclick event to each card and putting the hover effect into a  JavaScript function. 
+This victory did not last long and the cards would not flip back over no matter what. I ended up removing the card elements from html and created a card array in JAvascript. I then went on to rebuild my entire code.
+The game works properly now.
 
 
-Deployment
+
+
+#Deployment
 Align The Chakras has been deployed on GitHub Pages with the following process:
 
 All code was written on Gitpod, a cloud-based IDE.
@@ -88,7 +91,7 @@ The Download ZIP option provides a link to download a ZIP file which can be unzi
 
 Credits:
 
-Card Image:
+Flamethrower Card Image taken from:
 https://unsplash.com/@maxineficheux
 https://images.unsplash.com/photo-1566745914757-00febc880ff9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjZ8fGxhdmVuZGVyJTIwZmxvd2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
 
@@ -98,6 +101,7 @@ Code Institute
 
 https://www.shutterstock.com/ja/blog/wp-content/uploads/sites/6/2017/02/shutterstock_438865177.jpg
 
-https://stackoverflow.com/questions/57452099/how-do-i-add-grid-in-multiple-flip-cards-in-html
 
+
+Chakra images adapted from:
 https://yogapractice.com/yoga/balancing-7-chakras/
