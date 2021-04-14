@@ -14,7 +14,6 @@ const cards = [
 
 let currentCard = null;
 
-
 let cardsMatched = [];
 
 let countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
