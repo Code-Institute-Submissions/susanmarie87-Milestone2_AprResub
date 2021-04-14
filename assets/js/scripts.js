@@ -2,8 +2,6 @@
 const cards = [
   'sacral',
   'thirdEye',
-  'chakraMan',
-  'ladyChakra',
   'chakraTapestry',
   'chakraAngel',
   'heart',
