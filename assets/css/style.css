@@ -19,19 +19,17 @@ body {
 }
 h1 {
    font-family: 'BioRhyme Expanded', serif;
-   font-size: 3em;
-   margin: 0;
-   padding: 0;
-   padding-top: 25px;
+   font-size: 200%;
+   padding-top: 10%;
    text-align: center;
    color: aqua;
 }
 .game-container {
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
-  margin: 50px;
-  padding-top: 50px;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 5px;
+  margin: 20px;
+  padding-top: 10%;
   justify-content: center;
   perspective: 500px;
 }
@@ -44,7 +42,6 @@ h1 {
 p {
   text-align: center;
   font-size: 60px;
-  margin-top: 0px;
 }
 .card {
   cursor: pointer;
@@ -65,14 +62,6 @@ p {
   /* border-width: 1px; */
   /* border-style: solid; */
   transition: transform 250ms ease-in-out;
-}
-.card-front img {
-  width: 120px;
-  height: 120px;
-}
-.card-back img {
-  width: 120px;
-  height: 140px;
 }
 
 .card.flip .card-back {
@@ -107,6 +96,14 @@ p {
 .card-back:hover {
   transform: scale(1.05);
 }
+.card-front img {
+  width: 120px;
+  height: 120px;
+}
+.card-back img {
+  width: 120px;
+  height: 140px;
+}
 
 #victory-screen {
   display: flex;
@@ -136,14 +133,23 @@ p {
     display:block;
   }
   .game-container {
-    grid-template-columns: repeat(2, auto);
-    position: relative;
-    width: 90%;
-  }
-  .main{
-    margin-top: 45px;
-    height: 450px;
-    width: 300px;
-  
+    width:75%;
+    height:75%;
+    position: center;
+    justify-content: center;
+    grid-gap:0%;
+}
+#game-container.game-container{
+  width:200px;
+  height:200px;
+  padding-left:30%;
+}
+.card{
+  height:90px;
+  width:90px;
+}
+.card-back img{
+  height:90px;
+  width:90px;
 }
 }
