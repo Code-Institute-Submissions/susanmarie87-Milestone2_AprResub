@@ -35,6 +35,7 @@ h1 {
   justify-content: center;
   perspective: 500px;
 }
+
 .game-info-container {
   grid-column: 1 / -1;
   display: flex;
@@ -52,7 +53,6 @@ p {
   width: 120px;
   background-color: transparent;
 }
-
 .card-face {
   position: absolute;
   width: 100%;
@@ -129,4 +129,21 @@ p {
 .game-info {
  font-size: 15px;
  color: aqua; 
+}
+
+@media (max-width: 575px) {
+  body {
+    display:block;
+  }
+  .game-container {
+    grid-template-columns: repeat(2, auto);
+    position: relative;
+    width: 90%;
+  }
+  .main{
+    margin-top: 45px;
+    height: 450px;
+    width: 300px;
+  
+}
 }
