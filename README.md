@@ -5,20 +5,20 @@ all in one. This game is desgined to fit all screens so enjoy on your desktop, t
 
 Image
 
-Live site hosted on Github pages HERE
+Live site hosted on Github pages http://github.com - http://127.0.0.1:5500/!
 
-UX
-As a user, I want to play a rousing matching game.
+* User Stories
+  1. First Time Visitor Goals
+   
+     a. As a First Time Visitor, I want to play a card matching game that helps to keep my memory skills sharp.
+     b. As a First Time Visitor, I want to easily understand the game. 
+     c. As a First Time Visitor, I want the game to function properly and easily work on all screen sizes. 
+     d. As a First Time Visitor, I want the game to be challenging.
 
-As a user I want the game to be able to keep my attention.
-
-As a user I want the game to be a good challenge
-
-As a user choosing a card matching game, I want the memory game to sharpen my mind.
-
-As a user, I want this game to function properly.
-
-As a user, I want this game to be mobile first responsive.
+   2. Returning Visitor Goals
+      a. As a returning visitor, I would like to check and make sure I have kept the high score. 
+      b. I want the game to become more challeng as I go. 
+      c. I want the game to frequently become updated with new levels and challenges to beat.
 
 Wireframes
 Basic Wireframes
@@ -28,7 +28,8 @@ Final Wireframes
 
 Existing Features
 
-Technologies Used
+Frameworks, Libraries & Programs Used
+
 HTML5
 
 CSS
@@ -49,7 +50,7 @@ Each page on the website was tested for screen resposiveness to ensure breakpoin
 The code was ran through each specific validator to make sure it passed.
 
 
-Ran HTML code through WS3 Markdown validator. Minor warnings appeared regarding button element not permitted in the "a" element. Resolved this by replacing button element with div element
+HTML code has been through WS3 Markdown validator. 
 
 Removed unnecessary code that was flagged in HTML validator.
 
@@ -60,10 +61,9 @@ Ran JavaScript through JSHint. First pass returned 15 errors.
 Tested game on each mobile device. 
 
 #Bugs & errors
-Originally I could not stop the hover effect over the cards. This extremely painful and month long issue was resolved with the help
-of my mentor Gerard McBride by adding an Onclick event to each card and putting the hover effect into a  JavaScript function. 
-This victory did not last long and the cards would not flip back over no matter what. I ended up removing the card elements from html and created a card array in JAvascript. I then went on to rebuild my entire code.
-The game works properly now.
+In an effort to become more familiar with CSS grid, I thought I would forego Bootstrap for my game grid resulting in an almost
+impossible breakdown of the grid to be mobile-first responsive. This problem was kind of but not really solved by adding media queries and removing 
+two for a total of four card from the card grid.
 
 Testing
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
