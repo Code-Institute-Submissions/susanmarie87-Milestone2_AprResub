@@ -2,11 +2,6 @@
 html {
     box-sizing: border-box
 }
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
 html,
 body {
     width: 100%;
@@ -15,12 +10,12 @@ body {
     padding: 0;
 }
 body {
-    background-color: darkorchid;
+    background: linear-gradient(teal, darkorchid); 
 }
 h1 {
    font-family: 'BioRhyme Expanded', serif;
    font-size: 200%;
-   padding-top: 10%;
+   padding-top: 2%;
    text-align: center;
    color: aqua;
 }
@@ -28,8 +23,10 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 5px;
-  margin: 20px;
-  padding-top: 10%;
+  margin-left: auto;
+  padding-top: 12%;
+  padding-left: 110%;
+  padding-bottom: 0s;
   justify-content: center;
   perspective: 500px;
 }
@@ -104,7 +101,7 @@ p {
   width: 120px;
   height: 140px;
 }
-
+/**************************VICTORY SCREENS*************/
 #victory-screen {
   display: flex;
   flex-direction: column;
@@ -123,33 +120,72 @@ p {
   color: white;
   margin-top: 50px;
 }
-.game-info {
- font-size: 15px;
- color: aqua; 
+/***************TIMER BUTTON***************/
+#gameStart {
+  position: relative;
+  margin-top: 5%;
+  left:45%;
+  right:20%;
+  bottom:5%;
+  top:30;
 }
+
+
+/*****************************MEDIA QUERIES**********************/
 
 @media (max-width: 575px) {
   body {
     display:block;
   }
+  .main {
+    height: 170%;
+    width: 170%;
+  }
   .game-container {
-    width:75%;
-    height:75%;
+    width:70%;
+    height:70%;
     position: center;
     justify-content: center;
     grid-gap:0%;
 }
 #game-container.game-container{
-  width:200px;
-  height:200px;
-  padding-left:30%;
+  width:170px;
+  height:170px;
+  padding-left:10%;
+  padding-right:49% ;
 }
 .card{
-  height:90px;
-  width:90px;
+  height:70px;
+  width:70px;
 }
 .card-back img{
-  height:90px;
-  width:90px;
+  height:70px;
+  width:70px;
+}
+.card-front img {
+  height: 90px;
+  width: 90px;
 }
 }
+#gameStart {
+  position: relative;
+  margin-top: 70%;
+  left:45%;
+  right:85%;
+  bottom:5%;
+  top:40%;
+}
+.countdown {
+  position: relative;
+  margin-top: 80%;
+  left: 45%;
+  right: 85%;
+  bottom: 5%;
+  top: 40%;
+}
+
+@media (max-width: 991px) and (min-width: 768px)
+body {
+  display: block;
+}
+
