@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 //card array
 const cards = [
   'sacral',
@@ -13,24 +14,6 @@ const cards = [
 let currentCard = null;
 
 let cardsMatched = [];
-
-
-document.getElementById("gameStart").addEventListener("click", function(){
-  let timeleft = 60;
-
-  let downloadTimer = setInterval(function function1(){
-  document.getElementById("countdown").innerHTML = timeleft + 
-  "&nbsp"+"seconds remaining";
-
-  timeleft -= 1;
-  if(timeleft <= 0){
-      clearInterval(downloadTimer);
-      document.getElementById("countdown").innerHTML = "Time is up!"
-  }
-  }, 1000);
-
-  console.log(countdown);
-});
 
 
 function shuffle(array) {
@@ -175,8 +158,7 @@ function generateCardGrid() {
     container.appendChild(front);
     gameGrid.appendChild(container);
   });
-};
-
+}
 
 function init() {
 
@@ -185,7 +167,7 @@ function init() {
   document
     .querySelectorAll('.card')
     .forEach(card => card.addEventListener('click', cardClicked));
-};
+}
 
 // Initialize the game.
 init();
