@@ -102,14 +102,14 @@ function resetGame() {
     .querySelectorAll('.card')
     .forEach(card => card.classList.remove('flip'));
 
-  // Show the game section.
+  // Shows the game section.
   document.getElementById('main').style.display = 'block';
 
-  // Hide the victory screen section.
+  // Hides the victory screen section.
   document.getElementById('victory-screen').style.display = 'none';
 }
 
-
+// Renders grid
 function generateCardGrid() {
 
   const completeCards = shuffle([...cards, ...cards]);

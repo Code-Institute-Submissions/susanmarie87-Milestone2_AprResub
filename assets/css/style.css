@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@800&display=swap');
 html {
-    box-sizing: border-box
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box
 }
 html,
 body {
@@ -10,6 +18,8 @@ body {
     padding: 0;
 }
 body {
+    background: -webkit-gradient(linear, left top, left bottom, from(teal), to(darkorchid));
+    background: -o-linear-gradient(teal, darkorchid);
     background: linear-gradient(teal, darkorchid); 
 }
 h1 {
@@ -20,21 +30,30 @@ h1 {
    color: aqua;
 }
 .game-container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto 5px auto 5px auto 5px auto;
   grid-template-columns: repeat(4, auto);
   grid-gap: 5px;
   margin-left: auto;
   padding-top: 12%;
   padding-left: 110%;
   padding-bottom: 0s;
-  justify-content: center;
-  perspective: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 500px;
+          perspective: 500px;
 }
 
 .game-info-container {
   grid-column: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 p {
   text-align: center;
@@ -54,25 +73,39 @@ p {
   top: 0px;
   left: 0px;
   overflow: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border-radius: 12px;
   /* border-width: 1px; */
   /* border-style: solid; */
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  -o-transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
 .card.flip .card-back {
-  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
 }
 
 .card.flip .card-front {
-  transform: rotateY(0)
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0)
 }
 
 .back-image {
-  align-self: flex-start;
-  transform: translateY(-10px);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  -o-transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
 }
 
 .card-back {
@@ -82,16 +115,25 @@ p {
 
 .card-front {
   background-color: black;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .card-value {
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  -o-transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
-  transform: scale(.9);
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+  -webkit-transform: scale(.9);
+      -ms-transform: scale(.9);
+          transform: scale(.9);
 }
 
 .card-back:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .card-front img {
   width: 120px;
@@ -103,10 +145,19 @@ p {
 }
 /**************************VICTORY SCREENS*************/
 #victory-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 50px;
   display: none;
 }
@@ -145,7 +196,9 @@ p {
     width:70%;
     height:70%;
     position: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-gap:0%;
 }
 #game-container.game-container{
@@ -188,4 +241,3 @@ p {
 body {
   display: block;
 }
-
