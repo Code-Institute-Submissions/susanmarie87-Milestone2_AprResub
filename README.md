@@ -1,13 +1,11 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/susanmarie87/MS2-Game)
-
-Sit, relax, and Align The Chakras in this simple memory game. This game is desgined to be challenging yet relaxing 
-all in one. This game is desgined to fit all screens so enjoy on your desktop, tablet, or mobile phone. 
+<h1>Align The Chakras</h1>
+Sit back, relax, and Align The Chakras in this simple memory game. This game is desgined to be challenging yet relaxing all-in-one. The game is also desgined to fit all screens so enjoy on any device availabe.
 
 Image
 
-Live site hosted on Github pages http://github.com - http://127.0.0.1:5500/!
+Live site hosted on **[Github Pages](http://127.0.0.1:5500/!)**
 
-* User Stories
+<h1>User Stories</h1>
   1. First Time Visitor Goals
    
      a. As a First Time Visitor, I want to play a card matching game that helps to keep my memory skills sharp.
@@ -20,104 +18,115 @@ Live site hosted on Github pages http://github.com - http://127.0.0.1:5500/!
       b. I want the game to become more challeng as I go. 
       c. I want the game to frequently become updated with new levels and challenges to beat.
 
-Wireframes
-Basic Wireframes
+<h1>Wireframes</h1>
+
+-**Basic Wireframes**
+
 ![Image]('assets/MS2-WireFrame/images.jpg')
 
-Final Wireframes
-
-Existing Features
-
-Frameworks, Libraries & Programs Used
-
-HTML5
-
-CSS
-
-Bootstrap
-
-Github
-
-Git
-
-JavaScript
-
-W3C validation
-
-Testing
-Each page on the website was tested for screen resposiveness to ensure breakpoints.
-
-The code was ran through each specific validator to make sure it passed.
 
 
-HTML code has been through WS3 Markdown validator. 
+<h1>Frameworks, Libraries & Programs Used</h1>
 
-Removed unnecessary code that was flagged in HTML validator.
+**[HTML5](https://www.html.com)**
 
-Ran CSS through WS3 validator- PASSED.
+**[CSS](https://www.css.com)**
 
-Ran JavaScript through JSHint. First pass returned 15 errors.
+**[Bootstrap](https://www.getbootstrap.com)**
 
-Tested game on each mobile device. 
+**[Github](https://www.github.com)**
 
-#Bugs & errors
+**[Git](https://git-scm.com)**
+
+**[JavaScript](https://www.javascript.com)**
+
+**[Autoprefixer](https://autoprefixer.github.io/)**
+
+**[W3C validation](https://validator.w3.org/)**
+
+
+<h1>Bugs & Errors</h1>
+
 In an effort to become more familiar with CSS grid, I thought I would forego Bootstrap for my game grid resulting in an almost
 impossible breakdown of the grid to be mobile-first responsive. This problem was kind of but not really solved by adding media queries and removing 
 two for a total of four card from the card grid.
 
-Testing
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-W3C Markup Validator - Results
-W3C CSS Validator - Results
-Testing User Stories from User Experience (UX) Section
-First Time Visitor Goals
+<h1>Testing</h1>
+***
+The W3C Markup Validator, W3C CSS Validator, and JSHint Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+**W3C Markup Validator** - Results
+
+**W3C CSS Validator** - Results Validator.nu/LV http://validator.w3.org/services
+
+**JSHint Results**
+
+Metrics
+There are 11 functions in this file.
+
+Function with the largest signature take 1 arguments, while the median is 1.
+
+Largest function has 21 statements in it, while the median is 3.
+
+The most complex function has a cyclomatic complexity value of 4 while the median is 1.
+
+Two warnings
+57	Unnecessary semicolon.
+107	Unnecessary semicolon.
+
+
+<h1>Testing User Stories from User Experience (UX) Section</h1>
+
+**First Time Visitor Goals** 
+
 As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
 
 Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-The main points are made immediately with the hero image
-The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
-As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
-The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
-As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
 
-Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
-Returning Visitor Goals
-As a Returning Visitor, I want to get straight to the point and play the game. A "How To Play" Modal and start button would be nice to have.
+The game is very basic. There are no bells and whistles which makes it easier for a user to navigate.
+
+The main points are made immediately with the game grid image and header.
+
+The user only has one option, to click a card which begins the game
+
+<h3>Returning Visitor Goals</h3>
+
+-As a Returning Visitor, I want to get straight to the point and play the game. A "How To Play" Modal and start button would be nice to have.
 
 The game board works properly, meaning each cards clicks and flips over smoothly. I would like to have enough time to mentally calcuate the displayed image and remember the proper placement for future matching. 
 
-The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
-Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the "Join Now!" button which like any external link, will open in a new tab to ensure they can get back to the website easily.
-If the user is on the "Our Favourites" page they will also be greeted with a call to action button to invite the user to the Facebook group. The user is incentivized as they are told there is a weekly favourite product posted in the group.
-Frequent User Goals
+The Facebook Page can be found at the footer of every page and will open a new tab for 
 As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
 
-The user would already be comfortable with the website layout and can easily click the banner message.
 As a Frequent User, I want to check to see if there are any new blog posts.
 
-The user would already be comfortable with the website layout and can easily click the blog link
-As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
+Upon entering the page, the game is immediately up and the cards are waiting to be clicked. 
+Once the cards have all been matched, a victory screen appears letting the user know they have won with a "play again" button. 
 
-At the bottom of every page their is a footer which content is consistent throughout all pages.
-To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
-There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
-Further Testing
-The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+<h3>Further Testing</h3>
+
+The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, Safari, Bing, browsers.
 The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-A large amount of testing was done to ensure that all pages were linking correctly.
-Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
-Known Bugs
-On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
+The game was tested by friends and family.
+
+<h1>Known Bugs</h1>
+
+On some browsers like Safari, it seems two of the bottom two cards turn blue. 
+
+In some instances, the cards that have already been flippied can be clicked back over which breaks the logic early on and the victory screen appears earlier.
+
+If the game has been won once, the victory screen will not appear a second time.
+
+
 A white gap can be seen to the right of the footer and navigation bar as a result.
 On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
-Deployment
-GitHub Pages
+
+<h1>Deployment</h1>
+***
+**GitHub Pages**
+
 The project was deployed to GitHub Pages using the following steps...
 
 Log in to GitHub and locate the GitHub Repository
@@ -150,24 +159,17 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Unpacking objects: 100% (10/10), done.
 Click Here to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-Credits
-Code
-The full-screen hero image code came from this StackOverflow post
+<h1>Credits</h1>
+***
+<h5>Code</h5>
+- The full-screen hero image code came from this StackOverflow post
 
-Bootstrap4: Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+- Bootstrap4: Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
-MDN Web Docs : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found Here
+- MDN Web Docs : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found Here
 
-Content
- 
+<h1>Deployment</h1>
 
-Acknowledgements
-My Mentor for continuous helpful feedback.
-
-Tutor support at Code Institute for their support.
-
-
-#Deployment
 Align The Chakras has been deployed on GitHub Pages with the following process:
 
 All code was written on Gitpod, a cloud-based IDE.
@@ -188,20 +190,26 @@ The Clone option provides a URL, which you can use on your desktop IDE.
 
 The Download ZIP option provides a link to download a ZIP file which can be unzipped on your local machine or uploaded to your cloud-based IDE workspace.
 
-Credits:
+<h1>Credits:</h1>
 
-Media:  
-Flamethrower Card Image taken from:
-https://unsplash.com/@maxineficheux
-https://images.unsplash.com/photo-1566745914757-00febc880ff9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjZ8fGxhdmVuZGVyJTIwZmxvd2VyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
+**Media:**
+Flamethrower Card Image taken from Maxine Ficheux:
+<h1>(fix this for proper credit)</h1>
 
-<a href='https://www.freepik.com/photos/flower'>Flower photo created by tawatchai07 - www.freepik.com</a>
-Acknowledgements
+
+**Chakra images adapted from:**
+**[Yoga Practice](https://yogapractice.com/yoga/balancing-7-chakras/)**
+
+
+<h1>Acknowledgements</h1>
+
 Code Institute
 
-https://www.shutterstock.com/ja/blog/wp-content/uploads/sites/6/2017/02/shutterstock_438865177.jpg
+Gerard McBride
+
+Slack and the community for all contributions.
 
 
 
-Chakra images adapted from:
-https://yogapractice.com/yoga/balancing-7-chakras/
+
+
