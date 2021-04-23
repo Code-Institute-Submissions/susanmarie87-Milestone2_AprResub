@@ -11,6 +11,7 @@ const cards = [
   'root'
 ];
 
+
 let currentCard = null;
 
 let cardsMatched = [];
