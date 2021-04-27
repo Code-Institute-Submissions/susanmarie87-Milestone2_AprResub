@@ -179,7 +179,7 @@ h1 {
   color: white;
   margin-top: 50px;
 }
-/*****************************MEDIA QUERIES**********************/
+/*****************MEDIA QUERIES**********************/
 /*Small devices*/
 @media (max-width: 575px) {
   body {
@@ -220,8 +220,6 @@ h1 {
   width: 90px;
 }
 }
-
-
 /*Large devices such as tablets*/
 @media (max-width: 991px) and (min-width: 768px)
 body {
@@ -244,7 +242,6 @@ h1 {
   padding-left: 20%;
   padding-right: 24%;
 }
-
 /*Extra Small devices*/
 @media (max-width: 280px) {
 .container {
