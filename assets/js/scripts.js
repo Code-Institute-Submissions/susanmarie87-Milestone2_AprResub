@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+
 //card array
 const cards = [
   'sacral',
@@ -11,22 +12,22 @@ const cards = [
   'root'
 ];
 
-
+//variable for cards that are initially clicked. Once anothr card is clicked, it is chacked against this variable.
 let currentCard = null;
 
+//this is an array of strings that represent the names of the cards. If a card's name is in this array
+//then the card has been matched.
 let cardsMatched = [];
 
-
+//Fisher-Yates Shuffle function
 function shuffle(array) {
   var currentIndex = array.length,
     temporaryValue, randomIndex;
 
   while (0 !== currentIndex) {
 
-
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
-
 
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
@@ -36,10 +37,9 @@ function shuffle(array) {
   return array;
 }
 
+//The GameWon function is called when the game has been beaten
 function gameWon() {
-
   document.getElementById('main').style.display = 'none';
-
 
   document.getElementById('victory-screen').style.display = 'flex';
 
@@ -50,24 +50,18 @@ function cardClicked(clickEvent) {
 
   const cardElementClicked = clickEvent.currentTarget;
 
-
   const cardClicked = cardElementClicked.dataset.cardtype;
-
-
 
   cardElementClicked.classList.add('flip');
 
-
   if (currentCard) {
 
-    const matchFound = cardClicked === currentCard;
+     const matchFound = cardClicked === currentCard;
 
-
-    if (matchFound) {
+   if (matchFound) {
       cardsMatched.push(cardClicked);
 
-
-      if (cardsMatched.length === cards.length) {
+   if (cardsMatched.length === cards.length) {
 
         setTimeout(gameWon, 500);
       }
@@ -82,20 +76,17 @@ function cardClicked(clickEvent) {
           .querySelectorAll(`[data-cardType="${currentCard}"]`)
           .forEach(card => card.classList.remove('flip'));
 
-
-        cardElementClicked.classList.remove('flip');
+          cardElementClicked.classList.remove('flip');
 
         // Reset.
         currentCard = null;
       }, 500);
     }
 
-
   } else {
     currentCard = cardClicked;
   }
 };
-
 
 function resetGame() {
 
@@ -115,12 +106,9 @@ function generateCardGrid() {
 
   const completeCards = shuffle([...cards, ...cards]);
 
-
   completeCards.forEach(c => {
 
-
     const container = document.createElement('div');
-
 
     const front = document.createElement('div');
     const back = document.createElement('div');
@@ -128,14 +116,8 @@ function generateCardGrid() {
 
     const frontImg = document.createElement('img');
     const backImg = document.createElement('img');
-
-
-
     container.classList.add('card');
-
-
     container.dataset.cardtype = c;
-
 
     front.classList.add('card-face');
     front.classList.add('card-front');
@@ -143,13 +125,12 @@ function generateCardGrid() {
     back.classList.add('card-back');
 
 
-    frontImg.src = `/assets/images/${c}.jpg`;
+    frontImg.src = `assets/images/${c}.jpg`;
     frontImg.classList.add('card-value');
 
     // The backs of all of the cards are the same.
-    backImg.src = '/assets/images/Flamethrower.jpg';
+    backImg.src = 'assets/images/Flamethrower.jpg';
     backImg.classList.add('back-image');
-
 
     const gameGrid = document.getElementById('game-container');
 
@@ -168,6 +149,8 @@ function init() {
   document
     .querySelectorAll('.card')
     .forEach(card => card.addEventListener('click', cardClicked));
+
+  clearInterval(interval);
 }
 
 // Initialize the game.
