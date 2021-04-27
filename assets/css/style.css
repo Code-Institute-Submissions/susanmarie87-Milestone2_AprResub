@@ -4,8 +4,6 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
-
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@800&display=swap');
 
 html {
@@ -19,8 +17,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/**************************Animated Background*************/
+/*****************Animated Background*************/
 :root {
   --gradient: linear-gradient(90deg, #2c768d, purple, #da57b2);
 
@@ -52,7 +49,7 @@ h1 {
    text-align: center;
    color: aqua;
 }
-
+/*****************Game Container*************/
 .game-container {
   display: -ms-grid;
   display: grid;
@@ -69,20 +66,7 @@ h1 {
   -webkit-perspective: 500px;
           perspective: 500px;
 }
-
-.game-info-container {
-  grid-column: 1 / -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-p {
-  text-align: center;
-  font-size: 60px;
-}
+/*****************Cards*************/
 .card {
   cursor: pointer;
   position: relative;
@@ -108,7 +92,7 @@ p {
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
-
+/***************Card Flip Effect*************/
 .card.flip .card-back {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
@@ -118,7 +102,7 @@ p {
   -webkit-transform: rotateY(0);
           transform: rotateY(0)
 }
-
+/***************Card Flip Effect*************/
 .back-image {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -167,7 +151,7 @@ p {
   width: 120px;
   height: 140px;
 }
-/**************************VICTORY SCREENS*************/
+/***************VICTORY SCREENS*************/
 #victory-screen {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,17 +179,8 @@ p {
   color: white;
   margin-top: 50px;
 }
-
-.timer {
-  justify-content: center;
-  align-items: center;
-}
-
-.flips {
-  justify-content: center;
-}
 /*****************************MEDIA QUERIES**********************/
-
+/*Small devices*/
 @media (max-width: 575px) {
   body {
     display:block;
@@ -247,6 +222,7 @@ h1 {
 }
 
 
+/*Large devices such as tablets*/
 @media (max-width: 991px) and (min-width: 768px)
 body {
   display: block;
@@ -269,8 +245,10 @@ h1 {
   padding-right: 24%;
 }
 
-/*****************************READ ME**********************/
-
-h1{
-  justify-content: center;
+/*Extra Small devices*/
+@media (max-width: 280px) {
+.container {
+  padding-right: 0px;
+  padding-left: 1px;
+}
 }
