@@ -6,15 +6,10 @@ The game is also desgined to fit all screens so enjoy on any device availabe.
 
 Image
 
- **[View the live site here.](http://127.0.0.1:5500/)**
-<<<<<<< HEAD
+ **[View the live site here.](https://susanmarie87.github.io/Milestone2/)**
 
 ![Memory Game Screens](/assets/images/AutoScreens.png)
-=======
  
- ![Memory Game Screens](/assets/images/AutoScreens.png)
->>>>>>> 3edecdcf1393ccd19c4b7841a450f97cd0db1fba
-
 <h1>User Experience (UX)</h1>
 
 
@@ -60,16 +55,13 @@ Image
     The BioRhyme font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't 
     being imported into the site correctly. BioRhyme seemed to fit the bohemian vibe that has been intended for Align The Chakras.
 
-<<<<<<< HEAD
-=======
 ![Image](assets/images/ChakraWireFrame(1).jpg)
 ![Image](assets/images/ChakraWireFrame(2).jpg)
 
->>>>>>> 3edecdcf1393ccd19c4b7841a450f97cd0db1fba
 
   - **Imagery**
 
-  The intention of the image on the back of the cards is a woman throwing a fire wand was to give a sense of magic, light, and mystery. 
+    The intention of the image on the back of the cards is a woman throwing a fire wand was to give a sense of magic, light, and mystery. 
 
 <h1>Wireframes</h1>
 
@@ -168,8 +160,6 @@ The game was tested across all screen sizes on each browser to ensure responsive
 
 - In some instances, the cards that have already been flippied can be clicked back over which breaks the logic early on and the victory screen appears earlier.
 
-- If the game has been won once, the victory screen will not appear a second time.
-
 <h1>Features To Be Added</h1>
 
 There should be a timer function added along with a Hig Score Board. 
@@ -227,8 +217,10 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 **Code**
 
 - Bootstrap4: Bootstrap Library used throughout the project mainly to make site   responsive using the Bootstrap Grid System.
+
 - JavaScript portion was written with the help of Zackery Wilson of:  
    - [PortEXE - YouTube](https://www.youtube.com/channel/UCjGQyJCSU_VVMTu5nigonqg)
+
 - Animated gradient adapted from:  
    - [Kevin Powell](https://www.youtube.com/watch?v=f3mwKLXpOLk)
 
