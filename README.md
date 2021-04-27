@@ -1,7 +1,8 @@
 <h1>Align The Chakras</h1>
 
 
-Sit back, relax, and Align The Chakras in this simple memory game. This game is desgined to be challenging yet relaxing all-in-one. The game is also desgined to fit all screens so enjoy on any device availabe.
+Sit back, relax, and Align The Chakras in this simple memory game. This game is desgined to be challenging yet relaxing all-in-one. 
+The game is also desgined to fit all screens so enjoy on any device availabe.
 
 Image
 
@@ -55,17 +56,16 @@ Image
     being imported into the site correctly. BioRhyme seemed to fit the bohemian vibe that has been intended for Align The Chakras.
 
 
-- **Imagery**
+  - **Imagery**
 
   The intention of the image on the back of the cards is a woman throwing a fire wand was to give a sense of magic, light, and mystery. 
 
 <h1>Wireframes</h1>
 
--**Basic Wireframes**
+- **Basic Wireframes**
 
 ![Image](assets/images/ChakraWireFrame(1).jpg)
 ![Image](assets/images/ChakraWireFrame(2).jpg)
-
 
 <h1>Technologies Used</h1>
 
@@ -84,14 +84,12 @@ Image
    - Github is used to store the projects code after being pushed from Git.
 
 3. **[Git](https://git-scm.com)**
-    - Git was used for version control by utilizing the Gitpod terminal to commit and push to GitHub.
+    - Git was used for version control by utilizing the Gitpod terminal to commit 
+      and  push to GitHub.
 
-5. **[Autoprefixer](https://autoprefixer.github.io/)**
-
-7.**[Google Fonts]()**
-
-8. **[jQuery]()**
-
+4. **[Google Fonts](https://fonts.google.com/)**
+    - Google Fonts was used to import the 'BioRhyme' font which is used for the   
+      heading.
 
 
 <h1>Testing</h1>
@@ -104,7 +102,7 @@ The W3C Markup Validator, W3C CSS Validator, and JSHint Services were used to va
 
 - **JSHint Results**
 
-  There are 11 functions in this file.
+There are 11 functions in this file.
 
 Function with the largest signature take 1 arguments, while the median is 1.
 
@@ -112,47 +110,42 @@ Largest function has 21 statements in it, while the median is 3.
 
 The most complex function has a cyclomatic complexity value of 4 while the median is 1.
 
-Two warnings
-57	Unnecessary semicolon.
-107	Unnecessary semicolon.
-
 
 The game has been extensively tested across multiple browsers such as Google Chrome, Safari, Bing, and Mozilla browers. The first attempt at the game runs smoothly across all of the browsers. 
 
 The game was tested across all screen sizes on each browser to ensure responsiveness. 
 
 **<h4>Testing User Stories from User Experience (UX) Section</h4>**
-
+ 
 - **First Time Visitor Goals** 
 
-i. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+  i. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
 
-a. The game is very basic. There are no bells and whistles which makes it easier for a user to navigate.
+   a. The game is very basic. There are no bells and whistles which makes it easier for a user to navigate.
 
-b. The main points are made immediately with the game grid image and header.
+   b. The main points are made immediately with the game grid image and header.
 
-c. The user only has one option, to click a card which begins the game
+   c. The user only has one option, to click a card which begins the game
 
-d. The game board works properly, meaning each cards clicks and flips over smoothly. I would like to have enough time to mentally calcuate the displayed image and remember the proper placement for future matching. 
+    d. As a first time visitor, I want the game board to work properly, meaning each cards clicks and flips over smoothly. I would 
+    like to have enough time to mentally calcuate the displayed image and remember the proper placement for future matching. 
 
-- </h3>Returning Visitor Goals</h3>
+- **Returning Visitor Goals**
 
-ii. As a Returning Visitor, I want to get straight to the point and play the game. A "How To Play" Modal and start button would be nice to have.
+   ii. As a Returning Visitor, I want to get straight to the point and play the game. A "How To Play" Modal and start button would be nice to have.
  
- - <h3>Frequent User Goals</h3>
+ - **Frequent User Goals**
 
-As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
+    a. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
 
-As a Frequent User, I want to check to see if there are any new blog posts.
+    b. As a Frequent User, I want to check to see if there are any new blog posts.
 
-Upon entering the page, the game is immediately up and the cards are waiting to be clicked. 
-Once the cards have all been matched, a victory screen appears letting the user know they have won with a "play again" button. 
+- **Further Testing**
 
-<h3>Further Testing</h3>
+   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, Safari, Bing, browsers.
+   The website was viewed on a variety of devices such as Desktop, Laptop, multiple devices such as iPhone X, Samsung Galaxy, 
 
-The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, Safari, Bing, browsers.
-The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-The game was tested by friends and family.
+   The game was also tested by friends and family.
 
 <h1>Known Bugs</h1>
 
@@ -166,7 +159,11 @@ The game was tested by friends and family.
 
 - If the game has been won once, the victory screen will not appear a second time.
 
+<h1>Features To Be Added</h1>
 
+There should be a timer function added along with a Hig Score Board. 
+
+There should also be different levels of difficulty.
 
 <h1>Deployment</h1>
 
@@ -190,21 +187,49 @@ The Clone option provides a URL, which you can use on your desktop IDE.
 
 The Download ZIP option provides a link to download a ZIP file which can be unzipped on your local machine or uploaded to your cloud-based IDE workspace.
 
+
+**Forking the GitHub Repository**
+
+Forking the repository let you produce a copy  of the repository with the ability to make changes without impacting the original repositry.
+Forking can be don ewith the following steps:
+
+1. Log in to GitHub and locate the GitHub Repository
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+**Making a Local Clone**
+
+1. Log in to GitHub and locate the GitHub Repository
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type <em>git clone</em>, and then paste the URL you copied in Step 3.
+
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+7. Press Enter. Your local clone will be created.
+
 <h1>Credits:</h1>
 
 
-<h5>Code</h5>
+**Code**
 
-- Bootstrap4: Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
-
-- MDN Web Docs : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found Here
+- Bootstrap4: Bootstrap Library used throughout the project mainly to make site   responsive using the Bootstrap Grid System.
+- JavaScript portion was written with the help of Zackery Wilson of:  
+   - [PortEXE - YouTube](https://www.youtube.com/channel/UCjGQyJCSU_VVMTu5nigonqg)
+- Animated gradient adapted from:  
+   - [Kevin Powell](https://www.youtube.com/watch?v=f3mwKLXpOLk)
 
 **Media:**
+
 Flamethrower Card Image adapted from:
+
 **[Dusan Petkovic](https://www.shutterstock.com/image-photo/woman-spinning-fire-awesome-moment-beautiful-438865177)**
 
 
 **Chakra images adapted from:**
+
 **[Yoga Practice](https://yogapractice.com/yoga/balancing-7-chakras/)**
 
 
