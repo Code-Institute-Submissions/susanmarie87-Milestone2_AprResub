@@ -7,8 +7,13 @@ The game is also desgined to fit all screens so enjoy on any device availabe.
 Image
 
  **[View the live site here.](http://127.0.0.1:5500/)**
+<<<<<<< HEAD
 
 ![Memory Game Screens](/assets/images/AutoScreens.png)
+=======
+ 
+ ![Memory Game Screens](/assets/images/AutoScreens.png)
+>>>>>>> 3edecdcf1393ccd19c4b7841a450f97cd0db1fba
 
 <h1>User Experience (UX)</h1>
 
@@ -55,6 +60,12 @@ Image
     The BioRhyme font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't 
     being imported into the site correctly. BioRhyme seemed to fit the bohemian vibe that has been intended for Align The Chakras.
 
+<<<<<<< HEAD
+=======
+![Image](assets/images/ChakraWireFrame(1).jpg)
+![Image](assets/images/ChakraWireFrame(2).jpg)
+
+>>>>>>> 3edecdcf1393ccd19c4b7841a450f97cd0db1fba
 
   - **Imagery**
 
